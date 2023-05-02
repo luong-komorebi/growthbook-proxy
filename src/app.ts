@@ -42,7 +42,7 @@ const defaultContext: Context = {
   growthbookApiHost: "",
   secretApiKey: "",
   createConnectionsFromEnv: true,
-  pollForConnections: true,
+  pollForConnections: false,
   connectionPollingFrequency: 10000,
   enableCache: true,
   cacheSettings: {
