@@ -27,6 +27,14 @@ export default async () => {
     eventStreamPingIntervalMs: parseInt(
       process.env.EVENT_STREAM_PING_INTERVAL_MS ?? "30000"
     ),
+    connections: [
+      {
+        apiKey: process.env.API_KEY || "",
+        signingKey: process.env.SIGNING_KEY || "",
+        useEncryption: false,
+        connected: true,
+      },
+    ],
     // Cache settings:
     cacheSettings: {
       cacheEngine: (process.env.CACHE_ENGINE || "memory") as CacheEngine,
